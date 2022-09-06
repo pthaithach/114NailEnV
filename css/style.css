@@ -162,6 +162,7 @@ h6.caption {
     margin: 4px 0px 9px;
 }
 
+p a,
 .email-right p a,
 .w3-header-top-right-text p,
 .agileinfo-social-grids ul li a {
@@ -185,6 +186,7 @@ h6.caption {
     margin: 0px 4px;
 }
 
+p a:h
 .email-right p a:hover,
 .agileinfo-social-grids ul li a :hover {
     color: #fff;
@@ -401,7 +403,7 @@ h3.center:after {
     flex-wrap: wrap;
 }
 
-.about1, .about2 {
+.about1 {
     flex: 1;
     -ms-flex: 1;
 }
@@ -492,6 +494,60 @@ a.join-wthree:hover {
     transition: .5s ease-in;
 }
 
+/* heading */
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text-sub-heading-black{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0;
+    color: #777 !important;
+    font-size: 17px;
+}
+.text-sub-heading-white{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0;
+    color: #fff !important;
+    font-size: 17px;
+}
+.parent-line{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+}
+.line-black{
+    content: '';
+    background: #000;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.line-white{
+    content: '';
+    background: #fff;
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pb-0{
+    padding-bottom: 0 !important;
+}
 /* //About */
 .heading-agileinfo {
     font-weight: 600;
@@ -516,14 +572,9 @@ a.join-wthree:hover {
     padding: 0 15px;
 }
 
-.heading-agileinfo span:after {
-    content: '';
-    background: #212121;
-    height: 2px;
-    width: 70px;
-    position: absolute;
-    top: 132%;
-    right: 47%;
+
+.color-white{
+    color: white;
 }
 
 .heading-agileinfo.color-white span:after {
@@ -1323,6 +1374,33 @@ h3.agileits-icons-title {
     word-wrap: break-word;
     color: #777;
 }
+
+/* fix menu align left */
+.menu-service{
+    display: table-row-group;
+    /* width: 100%; */
+}
+.menu-service .title-small{display: table-row;width: 100%;}
+.menu-service .title-small .service{display: table-cell;width: 100%; padding: 6px 6px 6px 0;}
+.width-price{
+    width: 50px;
+    font-weight: bold;
+}
+.width-price.width-price-big{
+    width: 94px;
+}
+.width-price.width-price-medium{
+    width: 86px;
+}
+
+.line-dash{
+    padding: 30px 0;
+}
+
+
+
+
+
 @media(min-width: 991px){
     .donails .btn-viewmore{
         margin-top: 20px;
@@ -1366,7 +1444,7 @@ h3.agileits-icons-title {
         top: 89px;
     }
     .mt-4{
-        margin-top: 15px;
+        margin-top: 15px !important;
     }
     .mb-5{
         margin-bottom: 3rem;
@@ -3145,7 +3223,6 @@ button.close {
 
     .about2 {
         height: 300px;
-        margin-bottom: 30px;
     }
 
     .heading-agileinfo {
@@ -3845,8 +3922,100 @@ button.close {
     text-align: center;
     margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+    .about2 {
+        flex: 1;
+    }
+    .text-sub-heading-black, .text-sub-heading-white{
+        width: 73%;
+    }
+    
+    .mb-sm-3{
+        margin-bottom: 1rem;
+    }
+    .pricing-div h3 {
+        font-size: 23px;
+    }
 
+    .mwho-we-textmks {
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .about1 p {
+        padding-right: 15px;
+    }
+
+    .pl-xs-0 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .wthree-mid h3.heading-agileinfo {
+        font-size: 40px !important;
+    }
+
+    /*.col-md-3 {*/
+        /*-ms-flex: 0 0 25%;*/
+        /*flex: 0 0 25%;*/
+        /*max-width: 25%;*/
+    /*}*/
+    .pl-ms-0{
+        padding-left: 0 !important;
+    }
+    .pl-sm-3{
+        padding-left: 1rem !important;
+    }
+    .pr-sm-3{
+        padding-right: 1rem !important;
+    }
+    .pr-md-0, .px-md-0 {
+        padding-right: 0 !important;
+    }
+
+    .border-right-col {
+        border-right: 1px solid #dee2e6 !important;
+    }
+
+    .pl-sm-3, .px-sm-3 {
+        padding-left: 1rem !important;
+    }
+
+    .pr-md-3, .px-md-3 {
+        padding-right: 1rem !important;
+    }
+
+    .pt-md-0, .py-md-0 {
+        padding-top: 0 !important;
+    }
+
+    .mb-md-5, .my-md-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .mt-md-3, .my-md-3 {
+        margin-top: 1rem !important;
+    }
+
+    .col-md-9 {
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .title-big {
+        padding: 0 0 10px 0 !important;
+        font-size: 25px;
+    }
+    .line-service {
+        margin: 15px 0;
+    }
+}
 @media (min-width: 1024px) {
+    .text-sub-heading-black, .text-sub-heading-white{
+        width: 60%;
+    }
+   
     .w3-agile-logo {
         padding: 1em 2em;
     }
@@ -3931,88 +4100,13 @@ a.social-button:hover {
 .d-none{
     display: none;
 }
-@media (min-width: 768px) {
-    .mb-sm-3{
-        margin-bottom: 1rem;
-    }
-    .pricing-div h3 {
-        font-size: 23px;
-    }
-
-    .mwho-we-textmks {
-        height: 300px;
-        overflow-y: scroll;
-    }
-
-    .about1 p {
-        padding-right: 15px;
-    }
-
-    .pl-xs-0 {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .wthree-mid h3.heading-agileinfo {
-        font-size: 40px !important;
-    }
-
-    /*.col-md-3 {*/
-        /*-ms-flex: 0 0 25%;*/
-        /*flex: 0 0 25%;*/
-        /*max-width: 25%;*/
-    /*}*/
-    .pl-ms-0{
-        padding-left: 0 !important;
-    }
-    .pl-sm-3{
-        padding-left: 1rem !important;
-    }
-    .pr-sm-3{
-        padding-right: 1rem !important;
-    }
-    .pr-md-0, .px-md-0 {
-        padding-right: 0 !important;
-    }
-
-    .border-right-col {
-        border-right: 1px solid #dee2e6 !important;
-    }
-
-    .pl-sm-3, .px-sm-3 {
-        padding-left: 1rem !important;
-    }
-
-    .pr-md-3, .px-md-3 {
-        padding-right: 1rem !important;
-    }
-
-    .pt-md-0, .py-md-0 {
-        padding-top: 0 !important;
-    }
-
-    .mb-md-5, .my-md-5 {
-        margin-bottom: 3rem !important;
-    }
-
-    .mt-md-3, .my-md-3 {
-        margin-top: 1rem !important;
-    }
-
-    .col-md-9 {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-
-    .title-big {
-        padding: 0 0 10px 0 !important;
-        font-size: 25px;
-    }
-    .line-service {
-        margin: 10px 0;
-    }
+.margin-top{
+    margin-top: 40px;
 }
+.about2.margin-top{
+    margin-top: 0;
+}
+
 
 @media (min-width: 1440px) {
     .panel-title > a {
@@ -4087,7 +4181,7 @@ a.social-button:hover {
 }
 
 .box-service .row {
-    display: flex;
+    /* display: flex; */
 }
 
 .title-big {
@@ -4107,7 +4201,7 @@ a.social-button:hover {
     font-style: italic;
     color: #666;
     font-size: 14px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .line-service{
     /*margin: 1rem 0;*/
